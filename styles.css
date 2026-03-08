@@ -1,9 +1,4 @@
-/* 
-  Global styles
-  -------------
-  The layout uses CSS custom properties, Flexbox, and Grid
-  to keep the page responsive and easy to maintain.
-*/
+
 
 :root {
   --bg: #050816;
