@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gushwork Assignment - Responsive Landing Page</title>
+  <meta name="description" content="A fully responsive landing page with sticky header and image carousel with zoom." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    
+    <!-- Sticky Header (Appears after scroll) -->
+    <header id="stickyHeader" class="sticky-header" aria-hidden="true">
+      <div class="container sticky-header__content">
+        <div class="sticky-header__left">
+          <div class="sticky-header__logo-dot"></div>
+          Gushwork
+        </div>
+        <div class="sticky-header__right">
+          <span class="sticky-header__text">Ready to get started?</span>
+          <button class="btn btn--primary btn--small">Book a Demo</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="#" class="site-header__brand">
+          <div class="brand-mark"></div>
+          <span class="brand-text">Gushwork</span>
+        </a>
+        
+        <nav class="site-nav">
+          <ul class="site-nav__list">
+            <li><a href="#how-it-works" class="site-nav__link">How it Works</a></li>
+            <li><a href="#features" class="site-nav__link">Features</a></li>
+            <li><a href="#benefits" class="site-nav__link">Benefits</a></li>
+            <li><a href="#faq" class="site-nav__link">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-header__actions">
+          <button class="btn btn--ghost">Log in</button>
+          <button class="btn btn--primary">Get Started</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__grid">
+            <div class="hero__content">
+              <span class="eyebrow">v2.0 is live</span>
+              <h1 class="hero__title">The fastest way to scale your operations</h1>
+              <p class="hero__subtitle">
+                Delegate complex workflows to a curated network of top-tier talent. Scale up, dial down, and manage everything from one dashboard.
+              </p>
+              
+              <div class="hero__cta-row">
+                <button class="btn btn--primary btn--large">Start for free</button>
+                <button class="btn btn--secondary btn--large">View demo</button>
+              </div>
+
+              <div class="hero__meta">
+                <div class="hero__meta-item">
+                  <span class="hero__meta-value">98%</span>
+                  Task Success
+                </div>
+                <div class="hero__meta-item">
+                  <span class="hero__meta-value">24/7</span>
+                  Support
+                </div>
+                <div class="hero__meta-item">
+                  <span class="hero__meta-value">50k+</span>
+                  Hours Saved
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__visual">
+              <div class="hero-card hero-card--primary">
+                <div class="hero-card__header">
+                  <div class="hero-card__avatar-group">
+                    <div class="avatar">A</div>
+                    <div class="avatar" style="background: linear-gradient(135deg, #f59e0b, #ef4444)">K</div>
+                    <div class="avatar avatar--muted">+5</div>
+                  </div>
+                  <span class="hero-card__badge">Active Team</span>
+                </div>
+                <h3 class="hero-card__title">Growth Operations</h3>
+                <p class="hero-card__text">Campaign management & lead generation</p>
+                <ul class="hero-card__list">
+                  <li>
+                    <span class="hero-card__list-label">Tasks</span>
+                    <span class="hero-card__list-value">142</span>
+                  </li>
+                  <li>
+                    <span class="hero-card__list-label">Status</span>
+                    <span class="hero-card__list-value" style="color:#4ade80">On track</span>
+                  </li>
+                  <li>
+                    <span class="hero-card__list-label">ETA</span>
+                    <span class="hero-card__list-value">2h</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="hero-card hero-card--secondary">
+                <div class="hero-card__row">
+                  <span class="hero-card__label">Lead Qualification</span>
+                  <span class="hero-card__pill">Completed</span>
+                </div>
+                <div class="hero-card__row">
+                  <span class="hero-card__label">Data Enrichment</span>
+                  <span class="hero-card__pill">Completed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section id="how-it-works" class="section section--muted">
+        <div class="container">
+          <div class="section__header section__header--split">
+            <div>
+              <span class="eyebrow">Process</span>
+              <h2>How it works</h2>
+            </div>
+            <p class="section__description">
+              Get started in minutes and scale your operations without overhead. We handle the vetting, training, and management.
+            </p>
+          </div>
+          
+          <div class="hiw-grid">
+            <div class="hiw-card">
+              <span class="hiw-card__step">Step 01</span>
+              <h3 class="hiw-card__title">Define Workflow</h3>
+              <p class="hiw-card__text">Document your process using our intelligent templates or build from scratch.</p>
+            </div>
+            <div class="hiw-card">
+              <span class="hiw-card__step">Step 02</span>
+              <h3 class="hiw-card__title">Match Talent</h3>
+              <p class="hiw-card__text">Our system instantly pairs your tasks with the most qualified available talent.</p>
+            </div>
+            <div class="hiw-card">
+              <span class="hiw-card__step">Step 03</span>
+              <h3 class="hiw-card__title">Scale Effortlessly</h3>
+              <p class="hiw-card__text">Monitor progress in real-time and increase capacity with a single click.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Carousel Section -->
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section__header">
+            <span class="eyebrow">Platform Gallery</span>
+            <h2>Interactive Feature Preview</h2>
+            <p class="section__description" style="margin-top:0.75rem">
+              Hover over the main image to zoom in on details, or select a thumbnail to change the active view.
+            </p>
+          </div>
+
+          <div class="carousel">
+            <div class="carousel__main" id="carouselMain">
+              <!-- Main Image -->
+              <div class="carousel__image-wrapper">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Dashboard Preview" data-index="0" class="carousel__image" />
+              </div>
+
+              <!-- Thumbnails -->
+              <div class="carousel__thumbnails">
+                <button class="carousel__thumb is-active" data-index="0" data-image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" aria-label="View Dashboard">
+                  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80" alt="Dashboard Thumbnail" />
+                </button>
+                <button class="carousel__thumb" data-index="1" data-image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" aria-label="View Analytics">
+                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80" alt="Analytics Thumbnail" />
+                </button>
+                <button class="carousel__thumb" data-index="2" data-image="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=1200&q=80" aria-label="View Reports">
+                  <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=400&q=80" alt="Reports Thumbnail" />
+                </button>
+                <button class="carousel__thumb" data-index="3" data-image="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80" aria-label="View Team Management">
+                  <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=400&q=80" alt="Team Thumbnail" />
+                </button>
+              </div>
+            </div>
+            
+            <!-- Zoom Panel -->
+            <div id="zoomPanel" class="carousel__zoom-panel" aria-hidden="true" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80');">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits Section -->
+      <section id="benefits" class="section section--muted">
+        <div class="container">
+          <div class="section__header">
+            <h2>Why choose us</h2>
+          </div>
+          
+          <div class="benefits-grid">
+            <div class="benefit-card">
+              <h3>Fast Turnaround</h3>
+              <p>Get results within hours, not days. Our global talent pool works around the clock.</p>
+            </div>
+            <div class="benefit-card">
+              <h3>High Quality</h3>
+              <p>Rigorous QA processes ensure every output meets enterprise standards.</p>
+            </div>
+            <div class="benefit-card">
+              <h3>Cost Effective</h3>
+              <p>Pay only for successful outcomes. No overhead, no hidden fees.</p>
+            </div>
+            <div class="benefit-card">
+              <h3>Secure Data</h3>
+              <p>Bank-grade encryption and strict access controls protect your sensitive info.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq" class="section">
+        <div class="container">
+          <div class="section__header">
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          
+          <div class="faq-list">
+            <details class="faq-item" name="faq">
+              <summary>How does the pricing work?</summary>
+              <p>We use a simple credit system based on task complexity. You only pay for completed and approved tasks.</p>
+            </details>
+            <details class="faq-item" name="faq">
+              <summary>Can I integrate this with my existing tools?</summary>
+              <p>Yes, we offer integrations with Slack, Salesforce, HubSpot, and over 100 other platforms via our API.</p>
+            </details>
+            <details class="faq-item" name="faq">
+              <summary>What kind of tasks can I delegate?</summary>
+              <p>Virtually any digital process, from data entry and lead generation to complex research and customer support.</p>
+            </details>
+            <details class="faq-item" name="faq">
+              <summary>Is there a free trial available?</summary>
+              <p>Yes, new accounts receive $100 in free credits to test the platform with no commitment.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div class="site-footer__left">
+          <div class="brand-mark brand-mark--small"></div>
+          &copy; <span id="year"></span> Gushwork Assignment
+        </div>
+        <div class="site-footer__right">
+          Designed with pure HTML, CSS, and JS.
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
